@@ -25,8 +25,8 @@ Usage:
 		xtcping host port, like xtcping
 
 Example: 
-		./xping www.ifiveplus.com
-		./xping www.ifiveplus.com 443`
+		./xtcping www.ifiveplus.com
+		./xtcping www.ifiveplus.com 443`
 	fmt.Println(msg)
 	os.Exit(0)
 }

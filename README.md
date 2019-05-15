@@ -7,5 +7,5 @@
 		xtcping host port, like xtcping <br />
 
 `Example`:  <br />
-		./xping www.ifiveplus.com <br />
-		./xping www.ifiveplus.com 443 <br />
+		./xtcping www.ifiveplus.com <br />
+		./xtcping www.ifiveplus.com 443 <br />
