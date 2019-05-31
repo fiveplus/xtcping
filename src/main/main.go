@@ -72,10 +72,16 @@ func sendTCPRequest(icmp ICMP, destAddr *net.TCPAddr) error {
 	}
 	defer conn.Close()
 
-	var buffer bytes.Buffer
-	binary.Write(&buffer, binary.BigEndian, icmp)
+	// var buffer bytes.Buffer
+	// binary.Write(&buffer, binary.BigEndian, icmp)
 
+	/*
 	if _, err := conn.Write(buffer.Bytes()); err != nil {
+		return err
+	}
+	*/
+
+	if _, err := conn.Write([]byte("GET / HTTP/1.1 \r\n\r\n")); err != nil {
 		return err
 	}
 
